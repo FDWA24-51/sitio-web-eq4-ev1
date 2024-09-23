@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<!---Encabezado--->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Clima</title>
+	<link rel="shortcut icon"
+		href="https://icones.pro/wp-content/uploads/2021/07/cloud-day-forecast-rain-rainy-icon-1536x1536.png">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+	<style>
+		.mi-borde {
+			border: 2px solid rgba(255, 255, 255, 0.7);
+			/* Borde de 1px, gris */
+			border-radius: 8px;
+			/* Bordes redondeados opcionales */
+		}
+	</style>
+	<style>
+        /* Estilo personalizado para quitar las líneas verticales */
+        .table-no-vertical-borders td,
+        .table-no-vertical-borders th {
+            border-right: none !important; /* Quitar borde derecho */
+            border-left: none !important;  /* Quitar borde izquierdo */
+        }
+    </style>
+</head>
+<!---Fin encabezado--->
+
+<body>
+	<!---Inicio Contenedor--->
+	<div class="container border mt-5 p-3">
+
+		<div class="row mt-3">
+			<h1 class="text-dark">Clima en San Nicolas de los Garza</h1>
+			<h4>Semana del 02 al 07 de septiembre de 2024</h4>
+			<p>Responsable actualizacion por parte de Diego Prieto Cazares</p>
+
+			<!---LUNES--->
+
+			<div class="col-2 p-4 border-white-transparent">
+				<h5 class="text-center">Lunes 02</h5>
+				<i class="bi bi-cloud-lightning-fill fs-1 d-flex justify-content-center"></i>
+				<p class="text-center">Tormenta</p>
+				<p class="text-center">31°/23°</p>
+				<hr>
+				<i class="bi bi-wind d-flex justify-content-center fs-2"></i>
+				<p class="text-center">13-29 km/h</p>
+
+			</div>
+
+			<!---FIN LUNES--->
+
+			<!---MARTES--->
+
+			<div class="col-2 p-4 border-white-transparent">
+				<h5 class="text-center">Martes 03</h5>
+				<i class="bi bi-cloud-lightning-fill fs-1 d-flex justify-content-center"></i>
+				<p class="text-center">Tormenta</p>
+				<p class="text-center">29°/23°</p>
+				<hr>
+				<i class="bi bi-wind d-flex justify-content-center fs-2"></i>
+				<p class="text-center">10-15 km/h</p>
+
+			</div>
+
+			<!---FIN MARTES--->
+
+			<!---MIERCOLES--->
+
+			<div class="col-2 p-4 border-white-transparent">
+				<h5 class="text-center">Miercoles 04</h5>
+				<i class="bi bi-cloud-lightning-fill fs-1 d-flex justify-content-center"></i>
+				<p class="text-center">Tormenta</p>
+				<p class="text-center">29°/22°</p>
+				<hr>
+				<i class="bi bi-wind d-flex justify-content-center fs-2"></i>
+				<p class="text-center">07-23 km/h</p>
+
+			</div>
+
+			<!---FIN MIERCOLES--->
+
+			<!---JUEVES--->
+
+			<div class="col-2 p-4 border-white-transparent">
+				<h5 class="text-center">Jueves 05</h5>
+				<i class="bi bi-cloud-drizzle-fill fs-1 d-flex justify-content-center"></i>
+				<p class="text-center">Lluvia</p>
+				<p class="text-center">29°/22°</p>
+				<hr>
+				<i class="bi bi-wind d-flex justify-content-center fs-2"></i>
+				<p class="text-center">10-23 km/h</p>
+
+			</div>
+
+			<!---FIN JUEVES--->
+
+			<!---VIERNES--->
+
+			<div class="col-2 p-4 border-white-transparent">
+				<h5 class="text-center">Viernes 06</h5>
+				<i class="bi bi-cloud-sun-fill fs-1 d-flex justify-content-center"></i>
+				<p class="text-center">Nublado</p>
+				<p class="text-center">24°/20°</p>
+				<hr>
+				<i class="bi bi-wind d-flex justify-content-center fs-2"></i>
+				<p class="text-center">10-29 km/h</p>
+
+			</div>
+
+			<!---FIN VIERNES--->
+
+			<!---SABADO--->
+
+			<div class="col-2 p-4 border-white-transparent">
+				<h5 class="text-center">Sabado 07</h5>
+				<i class="bi bi-cloud-lightning-rain-fill fs-1 d-flex justify-content-center"></i>
+				<p class="text-center">Lluvia Fuerte</p>
+				<p class="text-center">23°/19°</p>
+				<hr>
+				<i class="bi bi-wind d-flex justify-content-center fs-2"></i>
+				<p class="text-center">10-24 km/h</p>
+
+			</div>
+
+			<!---FIN SABADO--->
+
+			<!-- Columna para la tabla -->
+            <div class="col-md-6">
+                <h4>Pronóstico próxima semana</h4>
+                <p>Pronóstico de la siguiente semana (8-14 septiembre)</p>
+
+                <!-- Tabla de Pronóstico -->
+                <table class="table table-bordered text-center table-no-vertical-borders">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8 de septiembre</td>
+                            <td>28</td>
+                            <td>18</td>
+                            <td>Parcialmente nublado</td>
+                        </tr>
+                        <tr>
+                            <td>9 de septiembre</td>
+                            <td>30</td>
+                            <td>19</td>
+                            <td>Despejado</td>
+                        </tr>
+                        <tr>
+                            <td>10 de septiembre</td>
+                            <td>27</td>
+                            <td>20</td>
+                            <td>Posibles lluvias</td>
+                        </tr>
+                        <tr>
+                            <td>11 de septiembre</td>
+                            <td>25</td>
+                            <td>17</td>
+                            <td>Mayormente nublado</td>
+                        </tr>
+                        <tr>
+                            <td>12 de septiembre</td>
+                            <td>26</td>
+                            <td>18</td>
+                            <td>Parcialmente nublado</td>
+                        </tr>
+                        <tr>
+                            <td>13 de septiembre</td>
+                            <td>29</td>
+                            <td>16</td>
+                            <td>Despejado</td>
+                        </tr>
+                        <tr>
+                            <td>14 de septiembre</td>
+                            <td>28</td>
+                            <td>21</td>
+                            <td>Posibles lluvias</td>
+                        </tr>
+                    </tbody>
+                </table>
+				
+				<!-- Tabla de Pronóstico -->
+            
+			</div>
+			
+			<!-- Fin columna para la tabla -->
+
+				<!---Columna Carta--->
+
+				<div class="col-6">
+
+					<!---Carta--->
+
+					<div class="card">
+						<div class="card-header">
+							<h5><B>Salida y puesta del sol</B></h5>
+							<p>Hoy, miercoles 4 de septiembre</p>
+						</div>
+						<div class="card-body">
+							<div class="row g-0">
+								<div class="p-2 col-6">
+									<div class="card">
+										<div class="card-header text-center">
+											<b>Salida</b>
+										</div>
+							<i class="bi bi-brightness-high-fill fs-1 d-flex justify-content-center"></i>		
+										<div class="card-body text-center">7:00AM</div>
+									</div>
+								</div>
+								<div class="p-2 col-md-6">
+									<div class="card">
+										<div class="card-header text-center">
+											<b>Puesta</b>
+										</div>
+										<i class="bi bi-clouds-fill p-2 fs-1 d-flex justify-content-center"></i>
+										<div class="card-body text-center"><p>6:10PM</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header">
+								<h5><b>Informacion UV</b></h5>
+							</div>
+							<div class="card-body">
+							<p>La radiación ultravioleta (UV) es un tipo de radiación no ionizante que proviene del sol y de fuentes artificiales, como las camas bronceadoras. Se caracteriza por tener una longitud de onda menor que la de la luz visible, pero mayor que la de los rayos X. 
+							</p>
+							</div>
+							<div class="card-footer">
+								<h5>Informacion solo de caracter informativo</h5>
+							</div>
+							<br>
+						</div>
+
+						</div>
+					</div>
+					<!---Fin Carta--->
+					<br>
+					<div class="alert alert-info">
+						<p>Plantilla elaborada por Diego Prieto Cazares Grupo 51</p>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+</body>
+</html>
+
+
+
+
+
+
+
+		<!---Fin Contenedor--->
